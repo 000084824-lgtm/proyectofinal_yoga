@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#25375b" name="theme-color"/>
+<meta content="ECO Wellness Lab" name="description"/>
+<title>ECO Wellness Lab</title>
+<link rel="icon" type="image/png" href="./img/logo.png?v=2">
+<link href="css/style.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="saltar" href="#experiencias">Ir a experiencias</a>
+<!-- CAMBIAR LOGO -->
+<header class="encabezado">
+<div class="contenedor barra">
+<a aria-label="ECO Wellness Lab, inicio" class="marca" href="#inicio"><img alt="ECO Wellness Lab" src="img/logo.png"/></a>
+<button aria-controls="menu" aria-expanded="false" class="menu-toggle" id="abrir-menu" type="button">Menú <svg aria-hidden="true" class="eco-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 48 48"><path d="M5 12 C17 2 30 22 43 12 M5 24 C17 14 30 34 43 24 M5 36 C17 26 30 46 43 36"></path></svg></button>
+<nav aria-label="Menú principal" class="menu" id="menu">
+</a><a href="#para-quien">Membresías</a><a href="#app">Aplicación</a><a href="https://coreaccess.fit/auth/login?studio=eco-wellness-lab" rel="noopener" target="_blank">Log In</a>
+<a class="studio" href="https://coreaccess.fit/studio/eco-wellness-lab" rel="noopener" target="_blank">ECO Studio</a>
+<a class="boton boton-pequeno" href="#experiencias">Reserva tu espacio</a>
+</nav>
+</div>
+</header>
+<main>
+<!-- PORTADA -->
+<section class="portada" id="inicio">
+<div aria-hidden="true" class="portada-foto"></div><svg aria-hidden="true" class="trazo-portada" preserveaspectratio="xMidYMid slice" viewbox="0 0 1440 700"><path d="M-80 580 C180 420 280 700 520 530 S830 230 1010 330 S1430 480 1510 120"></path></svg>
+<div class="contenedor portada-contenido">
+
+<h1>Tu energía<br/><em>hace ECO.</em></h1>
+<p>Creando experiencias conscientes y transformadoras.</p>
+<div class="portada-acciones">
+<a class="boton" href="#experiencias">Explora las experiencias</a>
+</div>
+</div>
+<svg aria-hidden="true" class="onda-portada" focusable="false" preserveaspectratio="none" viewbox="0 0 1440 100">
+<path d="M0 95 C380 -90 570 155 1440 12 L1440 100 L0 100 Z" fill="#fff"></path>
+</svg>
+</section>
+<!-- EXPERIENCIAS -* -->
+<section class="seccion seccion-experiencias" id="experiencias">
+<div class="contenedor">
+<div class="seccion-cabecera experiencias-cabecera"><div><p class="etiqueta"> EXPERIENCIAS ECO</p><h2>Yoga más allá del <em>estudio.</em></h2></div><div aria-label="Desplazar experiencias" class="experiencias-controles"><button aria-label="Ver experiencias anteriores" id="experiencias-anterior" type="button">←</button><button aria-label="Ver más experiencias" id="experiencias-siguiente" type="button">→</button></div></div>
+<!-- Puedes agregar más tarjetas article aquí: el carrusel se adapta automáticamente. -->
+<div aria-label="Experiencias ECO; desplaza horizontalmente para ver más" class="tarjetas" id="carrusel-experiencias" role="region" tabindex="0">
+<article class="tarjeta" data-id="e1" data-nombre="Spring Break Yoga" data-tipo="Colaboración" data-imagen="img/e1.jpg" data-descripcion="Una mañana de yoga, respiración y baños de hielo, con tiempo para disfrutar de la alberca." data-fecha-texto="Domingo 17 de mayo" data-inicio="09:00" data-fin="" data-lugar="Tepoztlan" data-nivel="Todos los niveles" data-incluye="Yoga, ejercicios de respiración, baños de hielo y día de alberca." data-traer="ropa cómoda, traje de baño" data-precio="" data-cupos="" data-archivo="true">
+<div class="tarjeta-foto"><img alt="Cartel de Spring Break Yoga" loading="lazy" src="img/e1.jpg"/></div>
+<div class="tarjeta-info"><h3>Spring Break Yoga</h3><p class="fecha">DOMINGO 17 DE MAYO</p><p class="datos">09:00 h · Tepoztlan</p><div class="tarjeta-pie"><small class="estado">Edición anterior</small><div class="tarjeta-botones"><button class="link-detalle" data-detalles="e1" type="button">Ver detalles</button><button class="boton reservar" data-reservar="e1" type="button">Solicitar lugar</button></div></div></div>
+</article>
+<article class="tarjeta" data-id="e2" data-nombre="Coffee Yoga: La Huerta" data-tipo="Colaboración" data-imagen="img/e2.jpg" data-descripcion="Una mañana de yoga y café en Tepoztlán." data-fecha-texto="Sábado 14 de noviembre" data-inicio="08:00" data-fin="" data-lugar="La Huerta, Tepoztlán" data-nivel="Todos los niveles" data-incluye="Yoga y café." data-traer="Tapete de yoga, agua, ropa cómoda" data-precio="" data-cupos="" data-archivo="true">
+<div class="tarjeta-foto"><img alt="Cartel de Coffee Yoga: La Huerta" loading="lazy" src="img/e2.jpg"/></div>
+<div class="tarjeta-info"><h3>Coffee Yoga: La Huerta</h3><p class="fecha">SÁBADO 14 DE NOVIEMBRE</p><p class="datos">08:00 h · La Huerta, Tepoztlán</p><div class="tarjeta-pie"><small class="estado">Edición anterior</small><div class="tarjeta-botones"><button class="link-detalle" data-detalles="e2" type="button">Ver detalles</button><button class="boton reservar" data-reservar="e2" type="button">Solicitar lugar</button></div></div></div>
+</article>
+<!--<article class="tarjeta" data-id="e3" data-nombre="Círculo de Verano" data-tipo="Colaboración" data-imagen="img/e3.jpg" data-descripcion="Una jornada de yoga, meditación y cata de vinos en Malinalco." data-fecha-texto="Domingo 23 de junio" data-inicio="10:00" data-fin="18:00" data-lugar="Jardín Zen, Malinalco" data-nivel="No indicado" data-incluye="Yoga vinyasa, cata de vinos, meditación y convivencia." data-traer="Consultar con ECO" data-precio="" data-cupos="" data-archivo="true">
+<div class="tarjeta-foto"><img alt="Cartel de Círculo de Verano" loading="lazy" src="img/e3.jpg"/></div>
+<div class="tarjeta-info"><h3>Círculo de Verano</h3><p class="fecha">DOMINGO 23 DE JUNIO</p><p class="datos">10:00–18:00 · Jardín Zen, Malinalco</p><div class="tarjeta-pie"><small class="estado">Edición anterior</small><div class="tarjeta-botones"><button class="link-detalle" data-detalles="e3" type="button">Ver detalles</button><button class="boton reservar" data-reservar="e3" type="button">Solicitar lugar</button></div></div></div>
+</article>!-->
+<article class="tarjeta" data-id="e4" data-nombre="Retiro de Primavera: Cuerpo y Alma" data-tipo="Retiro" data-imagen="img/e4.jpg" data-descripcion="Un día de yoga, ceremonia de cacao, meditación y temazcal en Tepoztlán." data-fecha-texto="Sábado 5 Diciembre" data-inicio="08:00" data-fin="17:00" data-lugar="El Nido, Tepoztlán" data-nivel="Todos los niveles" data-incluye="Yoga, ceremonia de cacao, meditación y temazcal." data-traer="Consejos en nuestras redes sociales" data-precio="650" data-cupos="30" data-fecha="2026-12-05" data-archivo="false">
+<div class="tarjeta-foto"><img alt="Cartel de Retiro de Primavera: Cuerpo y Alma" loading="lazy" src="img/e4.jpg"/></div>
+<div class="tarjeta-info"><h3>Retiro de Primavera: Cuerpo y Alma</h3><p class="fecha">SÁBADO 5 DE DICIEMBRE</p><p class="datos">08:00–17:00 · El Nido, Tepoztlán</p><div class="tarjeta-pie"><small class="estado">disponible</small><div class="tarjeta-botones"><button class="link-detalle" data-detalles="e4" type="button">Ver detalles</button><button class="boton reservar" data-reservar="e4" type="button">Reservar</button></div></div></div>
+</article>
+</div><div aria-label="Posición del carrusel" class="eco-puntos" id="experiencias-puntos"></div>
+<div class="sin-eventos" hidden="" id="sin-eventos"><h3>Las próximas fechas llegan primero a la comunidad.</h3><a class="boton" href="#comunidad">Conoce nuestra comunidad</a></div>
+</div>
+</section>
+<!-- 3. QUÉ ES ECO -->
+<section class="seccion seccion-que" id="que-es"><svg aria-hidden="true" class="eco-fondo-linea" preserveaspectratio="xMidYMid slice" viewbox="0 0 1200 400"><path d="M-100 310 C180 420 390 40 650 170 S950 420 1250 70 M-100 340 C180 450 390 70 650 200 S950 450 1250 100"></path></svg>
+<div class="contenedor que-layout">
+<div class="que-intro"><p class="etiqueta"> QUÉ ES ECO</p><h2>Más que una práctica,<br/><em>una experiencia.</em></h2></div>
+<div aria-label="Galería de ECO" class="eco-recuerdos"><div aria-label="Galería de recuerdos. Desliza o usa las teclas izquierda y derecha" class="eco-fotos" role="region" tabindex="0"><img alt="Yoga inmersiva" draggable="false" src="img/y7.jpg"/><img alt="Práctica de yoga" draggable="false" src="img/y1.jpg"/><img alt="Movimiento y conexión" draggable="false" src="img/y3.jpg"/></div><button type="button" class="eco-avanzar">Desliza para explorar</button></div>
+</div>
+</section>
+<!-- CÓMO SE VIVE / ACTIVIDADES  -->
+<section class="seccion seccion-actividades" id="como-se-vive">
+<div class="contenedor">
+<div class="actividades-encabezado">
+<p class="etiqueta">Lo que ofrecemos</p>
+<h2>Nuestras <em>clases.</em></h2>
+</div>
+<div class="actividades-grid">
+<article class="actividad">
+<img alt="Movimiento, luz y sonido en una experiencia sensorial." loading="lazy" src="img/in.jpg"/>
+<div class="actividad-nombre"><h3>Yoga Inmersiva</h3>
+<p>Tu práctica dentro de un universo de proyecciones, luz y sonido que se mueven contigo. El espacio te envuelve y tu atención se queda en tu respiración.</p>
+</div>
+</article>
+<article class="actividad">
+<img alt="Imagen ilustrativa de una actividad de bienestar" loading="lazy" src="img/y8.jpg"/>
+<div class="actividad-nombre"><h3>Yoga Outside</h3>
+<p>Tu práctica rodeada de bambú y aire libre para que tu respiración encuentre más lugar.</p>
+</div>
+</article>
+<article class="actividad">
+<img alt="Cuenco utilizado en experiencias sonoras" loading="lazy" src="img/y6.jpg"/>
+<div class="actividad-nombre"><h3>Yoga para Runners</h3>
+<p>Yoga pensado para quien corre. Caderas, piernas y espalda baja reciben la atención que tu rutina pide, y tu respiración aprende a encontrar más espacio.</p>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!--  MEMBRESÍAS -->
+<section class="seccion seccion-membresias" id="para-quien">
+<div class="contenedor">
+<p class="etiqueta">MEMBRESÍAS ECO</p>
+<h2>Encuentra tu propio <em>ritmo.</em></h2>
+<div aria-label="Planes de ECO Studio" class="planes-eco" tabindex="0">
+<article class="plan-eco">
+<small>ECO Studio</small>
+<h3>Ona</h3><p class="plan-precio">$200 <small>MXN</small></p>
+<p>1 clase · 1 semana</p><p>Acceso a todas las clases</p>
+</article>
+<article class="plan-eco">
+<small>ECO Studio</small>
+<h3>Expande</h3><p class="plan-precio">$700 <small>MXN</small></p>
+<p>4 clases · 3 semanas</p><p>Acceso a todas las clases</p>
+</article>
+<article class="plan-eco plan-destacado">
+<small>ECO Studio</small>
+<h3>Conecta</h3><p class="plan-precio">$1,200 <small>MXN</small></p>
+<p>8 clases · 5 semanas</p><p>Acceso a todas las clases</p>
+</article>
+<article class="plan-eco">
+<small>ECO Studio</small>
+<h3>Om</h3><p class="plan-precio">$1,500 <small>MXN</small></p>
+<p>12 clases · 6 semanas</p><p>Acceso a todas las clases</p><p>Pases de invitado</p>
+</article>
+</div>
+<div class="planes-pie"><small>Membresías para las clases de ECO Studio. Las experiencias se reservan por separado. Consulta con ECO si existen beneficios adicionales.</small><a class="boton" href="https://coreaccess.fit/auth/login?studio=eco-wellness-lab" rel="noopener" target="_blank">Consultar membresías</a></div>
+</div>
+</section>
+<!--  VOCES ECO-->
+<section class="seccion seccion-testimonios" id="testimonios">
+<div class="contenedor voces-layout">
+<div class="voces-titulo">
+<p class="etiqueta">VOCES ECO</p>
+<h2>Lo que ellas se <em>llevaron.</em></h2>
+</div>
+<div aria-label="Opiniones de ejemplo" class="voces-carrusel">
+<div class="voces-controles">
+<button aria-label="Opinión anterior" class="flecha" id="opinion-anterior" type="button">←</button>
+<span aria-live="polite" id="opinion-contador">1 de 3</span>
+<button aria-label="Opinión siguiente" class="flecha" id="opinion-siguiente" type="button">→</button>
+</div>
+<div aria-live="polite" class="opinion" id="opinion-panel">
+<span aria-hidden="true" class="comillas">“</span>
+<p id="opinion-frase">Fue un momento para desconectarme del ritmo de la semana y disfrutar algo diferente.</p>
+<div class="opinion-firma"><span aria-hidden="true" class="opinion-avatar">E</span><div><strong id="opinion-nombre">Persona falsa</strong><small id="opinion-actividad">Micro retiro · Texto falso</small></div></div>
+</div>
+<div aria-label="Elegir opinión" class="opinion-puntos">
+<button aria-current="true" aria-label="Ver opinión 1" class="activo" data-opinion="0" type="button"></button>
+<button aria-label="Ver opinión 2" data-opinion="1" type="button"></button>
+<button aria-label="Ver opinión 3" data-opinion="2" type="button"></button>
+</div>
+</div>
+</div>
+</section>
+<!-- LOS ESPACIOS -->
+<section class="seccion seccion-espacios" id="espacios">
+<div class="contenedor">
+<p class="etiqueta">ESPACIOS</p>
+<h2>Cada lugar, <em>una nueva experiencia.</em></h2>
+<p class="espacios-intro">ECO trasciende el espacio de un estudio. Cada encuentro nos invita a descubrir nuevas formas de conectar con el movimiento y el entorno.</p>
+<div class="galeria-espacios">
+<figure><img alt="Referencia visual de práctica inmersiva" loading="lazy" src="img/y10.jpg"/><figcaption>ECO Studio · Cuernavaca</figcaption></figure>
+<figure><img alt="Referencia visual de práctica en naturaleza" loading="lazy" src="img/y12.jpg"/><figcaption>Tepoztlán</figcaption></figure>
+<figure><img alt="Referencia visual de encuentro al aire libre" loading="lazy" src="img/y11.jpg"/><figcaption>Xochimilco</figcaption></figure>
+</div><p class="espacios-nota"> La ubicación de cada próximo encuentro se indica en su ficha.</p>
+</div>
+</section>
+<!-- COMUNIDAD  -->
+<section class="seccion seccion-comunidad" id="comunidad"><svg aria-hidden="true" class="eco-fondo-linea" preserveaspectratio="xMidYMid slice" viewbox="0 0 1200 400"><path d="M-100 310 C180 420 390 40 650 170 S950 420 1250 70 M-100 340 C180 450 390 70 650 200 S950 450 1250 100"></path></svg>
+<div class="contenedor comunidad-layout">
+<div class="comunidad-texto"><p class="etiqueta">Comunidad ECO</p><h2>La energía se comparte.</h2><p>Descubre las próximas experiencias 48 horas antes que en redes.</p><a class="boton boton-claro" href="https://wa.me/527773041059?text=Hola%20ECO%2C%20quiero%20unirme%20a%20la%20comunidad" id="enlace-comunidad" rel="noopener" target="_blank">Únete a la comunidad <svg aria-hidden="true" fill="none" height="25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4" viewbox="0 0 32 32" width="25"><path d="M6 24C-3 10 12 0 23 7S31 29 12 27L4 29Z M11 9Q5 13 15 22Q23 27 24 20L19 17L16 20Q10 16 12 13Z"></path></svg></a></div>
+<div class="comunidad-ilustracion"><svg aria-label="Tres personas sentadas en círculo, conectadas por líneas orgánicas" fill="none" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.65" viewbox="0 0 460 270"><path d="M20 220 C65 246 111 239 151 216 C181 199 196 190 230 190 C267 190 287 207 318 221 C365 244 413 238 440 218 M75 190 C46 177 53 150 77 137 C94 128 113 135 120 149 C130 168 113 182 97 174 C77 164 82 143 96 144 C119 145 126 179 143 194 C160 210 135 227 105 225 C65 223 44 211 67 199 C88 187 117 196 145 207 M158 190 C176 165 194 157 206 139 C218 121 205 110 202 91 C198 68 215 50 234 55 C257 61 261 87 249 101 C235 118 212 106 216 85 C219 69 240 70 246 89 C255 119 264 153 294 189 C310 209 279 225 241 221 C201 217 169 224 163 208 C155 187 201 183 230 199 C254 212 279 202 294 189 M315 207 C338 190 365 187 389 199 C415 212 395 226 357 225 C323 224 301 211 317 194 C334 177 338 145 360 144 C379 143 384 165 364 174 C347 181 330 166 340 149 C350 131 371 129 387 140 C409 155 413 178 390 190 M112 182 Q148 167 177 175 M283 175 Q314 167 349 182" pathlength="1"></path></svg></div></div>
+</section>
+<!-- PREGUNTAS  -->
+<section class="seccion seccion-preguntas" id="preguntas"><div class="contenedor">
+<div class="faq-encabezado"><p class="etiqueta">PREGUNTAS FRECUENTES</p><h2>Antes de venir.</h2></div>
+<div class="faq-cuadricula">
+<details><summary>¿Necesito experiencia previa?</summary><p>No necesariamente. Revisa el nivel de la experiencia que te interesa.</p></details>
+<details><summary>¿Qué incluye mi lugar?</summary><p>Lo encuentras en el botón «Ver detalles» de cada experiencia.</p></details>
+<details><summary>¿Cómo reservo?</summary><p>Selecciona una experiencia, completa tus datos y envía la solicitud por WhatsApp. ECO deberá confirmar la disponibilidad. Las fechas y precios de esta demostración son ilustrativos.</p></details>
+<details><summary>¿Las membresías incluyen las experiencias?</summary><p>Los planes de ECO Studio están destinados a las clases. Las experiencias tienen un proceso de reserva independiente. Consulta con ECO si tu plan ofrece algún beneficio adicional.</p></details>
+<details><summary>¿Dónde se realizan?</summary><p>La sede se indica en cada experiencia o se confirma con ECO.</p></details>
+</div>
+<a class="faq-contacto" href="https://wa.me/527779071887?text=Hola%20ECO%2C%20tengo%20una%20pregunta%20sobre%20las%20experiencias" rel="noopener" target="_blank">¿Otra duda? Escríbenos</a>
+</div></section>
+<!-- APP OFICIAL -->
+<section class="seccion seccion-app" id="app"><svg aria-hidden="true" class="eco-fondo-linea" preserveaspectratio="xMidYMid slice" viewbox="0 0 1200 400"><path d="M-100 310 C180 420 390 40 650 170 S950 420 1250 70 M-100 340 C180 450 390 70 650 200 S950 450 1250 100"></path></svg><div class="contenedor app-layout">
+<div aria-label="Vista ilustrativa de la plataforma ECO en un celular" class="app-visual">
+<div class="celular"><div class="celular-camara"></div><div class="celular-pantalla"><div class="celular-logo"><img alt="ECO Wellness Lab" src="img/logo.png"/></div><div class="celular-paisaje"></div><div class="celular-evento"><span>PRÓXIMAS EXPERIENCIAS</span><strong>Un momento para ti</strong><small>Explora desde ECO Studio</small></div><div class="celular-nav">⌂   ◷   ♡   ☰</div></div></div>
+</div>
+<div class="app-texto"><p class="etiqueta">Descarga la aplicación</p><h2>Lleva ECO<em>contigo.</em></h2>
+<div class="app-botones"><a class="boton" href="https://coreaccess.fit/get-app?studio=eco-wellness-lab" rel="noopener" target="_blank">Descarga App</a></div>
+</div>
+</div></section>
+</main>
+<!-- PIE DE PÁGINA  -->
+<footer class="pie" id="contacto"><div class="contenedor pie-layout">
+<div><a aria-label="Volver al inicio" class="marca" href="#inicio"><img alt="ECO Wellness Lab" src="img/logo.png"/></a></div>
+<div class="redes-sociales">
+<a aria-label="Instagram" href="https://www.instagram.com/eco.wellness_lab/" rel="noopener" target="_blank">
+<svg aria-hidden="true" class="eco-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 48 48"><path d="M8 17 Q8 6 20 6 L32 6 Q42 6 42 18 L42 31 Q42 42 30 42 L18 42 Q6 42 6 30 L6 18 M24 34 C10 34 11 14 24 14 C38 14 38 34 24 34 M34 12 L35 12"></path></svg>
+</a>
+<a aria-label="WhatsApp" href="https://wa.me/527779071887" rel="noopener" target="_blank">
+<svg aria-hidden="true" class="eco-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 48 48"><path d="M10 36 C-3 17 12 2 28 6 C48 9 48 38 28 42 Q18 44 10 36 L5 43 L10 36 M17 14 Q10 18 23 31 Q35 39 36 29 L29 25 L25 29 Q16 23 19 19 Z"></path></svg>
+</a>
+<a aria-label="Correo electrónico" href="mailto:eco.yoga.lab@gmail.com">
+<svg aria-hidden="true" class="eco-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 48 48"><path d="M5 12 Q24 31 43 12 Q43 7 36 8 L12 8 Q5 8 5 16 L5 34 Q5 40 12 40 L36 40 Q43 40 43 33 L43 12"></path></svg>
+</a>
+</div>
+<a class="boton boton-pie" href="#experiencias">Reserva tu experiencia</a>
+</div><div class="contenedor pie-inferior"><span>© 2026 · Diseño y desarrollo web por Gabriela Carmona Dávila.</span></div></footer>
+<!-- VENTANAS: SON LA FUNCIÓN PRINCIPAL DEL PROYECTO -->
+<dialog aria-labelledby="detalle-titulo" class="modal" id="detalle"><button aria-label="Cerrar ventana" class="cerrar" data-cerrar="" type="button">×</button><img alt="Fotografía de la experiencia" class="modal-imagen" id="detalle-imagen" src="img/flow.webp"/><div class="modal-contenido"><p class="etiqueta" id="detalle-tipo"></p><h2 id="detalle-titulo"></h2><p id="detalle-descripcion"></p><div class="detalle-datos"><p><strong>Fecha y horario</strong><span id="detalle-fecha"></span></p><p><strong>Ubicación</strong><span id="detalle-lugar"></span></p><p><strong>Nivel</strong><span id="detalle-nivel"></span></p><p><strong>Incluye</strong><span id="detalle-incluye"></span></p><p><strong>Qué traer</strong><span id="detalle-traer"></span></p><p><strong>Precio</strong><span id="detalle-precio"></span></p></div><button class="boton ancho" id="detalle-reservar" type="button">Reservar esta experiencia</button><div id="detalle-comunidad" hidden><p>Conoce las próximas experiencias a través de nuestra comunidad.</p><a class="boton ancho" href="#comunidad" id="detalle-enlace-comunidad">Conoce nuestra comunidad</a></div></div></dialog>
+<dialog aria-labelledby="reserva-titulo" class="modal modal-formulario" id="reserva">
+<button aria-label="Cerrar ventana" class="cerrar" data-cerrar type="button">×</button>
+<div class="modal-contenido"><p class="etiqueta">RESERVA TU ESPACIO · DEMOSTRACIÓN</p>
+<h2 id="reserva-titulo"></h2>
+<div class="reserva-datos"><p id="reserva-experiencia"></p><p id="reserva-lugar"></p></div>
+<form id="formulario">
+<label for="nombre">Nombre completo</label><input autocomplete="name" id="nombre" maxlength="70" name="nombre" placeholder="Tu nombre" required>
+<label for="asistentes">Número de asistentes</label><select id="asistentes" name="asistentes"><option value="1">1 persona</option><option value="2">2 personas</option><option value="3">3 personas</option><option value="4">4 personas</option></select>
+<div class="precio-total"><span>Total</span><strong id="total" aria-live="polite"></strong></div>
+<p class="nota" id="precio-persona"></p>
+<button class="boton ancho" type="submit">Solicitar mi reservación por WhatsApp</button>
+<p class="nota reserva-aviso">Envía el mensaje en WhatsApp y espera la confirmación de ECO. Esta demostración no cobra ni aparta lugares.</p>
+</form>
+<details class="guardar-fecha"><summary><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M12 13v5M9.5 15.5h5"/></svg> Guardar fecha <span aria-hidden="true">⌄</span></summary>
+<div class="calendario-opciones"><a id="enlace-google" rel="noopener" target="_blank">Google Calendar</a><button id="descargar-calendario" type="button">Apple Calendar / otros (.ics)</button><p class="nota">Guardar la fecha no confirma tu reservación.</p></div><p class="nota" id="calendario-pendiente" hidden>Podrás guardar la fecha cuando se anuncie la próxima edición.</p></details>
+</div></dialog>
+<a class="barra-movil" href="#experiencias" id="barra-movil">Reserva tu espacio</a>
+<script src="js/script.js"></script>
+</body>
+</html>

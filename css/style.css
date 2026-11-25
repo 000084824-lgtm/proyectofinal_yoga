@@ -52,6 +52,44 @@ em { font-weight:normal; }
 .portada .boton { background:#f8f7fb; color:var(--azul); border-color:#f8f7fb; }
 .enlace-claro { font-size:14px; text-decoration:none; border-bottom:1px solid #ffffff80; padding:8px 0; }
 .portada-pie { position:absolute; bottom:26px; left:calc((100% - min(1120px,100% - 56px))/2); display:flex; gap:18px; font-size:12px; letter-spacing:.04em; opacity:.85; }
+/* Correcciones para celulares */
+@media (max-width: 700px) {
+
+    /* Portada */
+    .portada {
+        min-height: 560px !important;
+    }
+
+    .portada-foto {
+        background-position: center, right center !important;
+    }
+
+    /* Aplicación */
+    .seccion-app .app-layout {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .seccion-app .app-visual {
+        order: 2;
+        width: 100%;
+        margin: 0;
+        transform: none !important;
+    }
+
+    .seccion-app .app-texto {
+        order: 1;
+    }
+
+    .app-texto h2 {
+        font-size: 32px;
+    }
+
+    .app-botones {
+        align-items: center;
+    }
+}
 /* EXPERIENCIAS */
 .seccion-experiencias { background:#fff; }
 .seccion-cabecera { display:flex; justify-content:space-between; align-items:end; gap:50px; margin-bottom:34px; }
